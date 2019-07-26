@@ -99,18 +99,12 @@ p.footer
     <div class="div big" id="girl-output"></div>
     <div class="div big" id="boy-output"></div>
     <script type="module">
-        import {Eve,Adam} from "../people.ts";
+        import {Eve} from "../people.ts";
         
         export function outputEve() {
             document.getElementById("girl-output").innerHTML = Eve.describeface();
         }
-
-        export function outputAdam() {
-            document.getElementById("boy-output").innerHTML = Adam.describeface();
-        }
-
         outputEve();
-        outputAdam();
     </script>
 </body>
 
