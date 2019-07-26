@@ -1,7 +1,7 @@
 // import {Eve} from "../people";
 
 export function outputEve() {
-    document.getElementById("girl-output").innerHTML = Eve.describeface();
+    document.getElementById("girl-output").innerHTML = people.Eve.describeface();
 }
 
 outputEve();
