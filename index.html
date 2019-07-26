@@ -98,13 +98,7 @@ p.footer
 <body>
     <div class="div big" id="girl-output"></div>
     <div class="div big" id="boy-output"></div>
-    <script type="module" id="import-module">
-        import {Eve} from "../TSTest/people.ts";
-        
-        export function outputEve() {
-            document.getElementById("girl-output").innerHTML = Eve.describeface();
-        }
-        outputEve();
+    <script type="module" id="import-module" src="../TSTest/people.js">
     </script>
 </body>
 
