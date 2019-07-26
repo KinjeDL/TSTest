@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+div.background
+{
+    opacity: .20;
+    background-image: url("./faded-sun-map.png");
+    width:100%;
+    height:100%;
+    min-height: 640px;
+    min-width: 480px;
+}
+div.foreground
+{
+    position: absolute;
+    top: 10px;
+    opacity: 1.0;
+}
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* Green */
+.green {
+  color: green;
+  background: rgb(170, 247, 163);
+}
+
+.green:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Red */
+.red {
+  color: red;
+  background: rgb(247, 152, 152);
+}
+
+.red:hover {
+  background: #f44336;
+  color: white;
+}
+
+/* Gray */
+.recall {
+  color: black;
+  background: grey
+}
+
+.recall:hover {
+  background: #e7e7e7;
+}
+
+.hidden
+{
+    color: black;
+    visibility:hidden;
+}
+
+div.big
+{
+    font-size: 220%;
+    font-weight: bold;
+}
+div.med
+{
+    font-size: 160%;
+}
+div.smol
+{
+    font-size: 100%;
+}
+div.input
+{
+    border: 1px solid black;
+    font-size: 100%;
+}
+img{
+    border: 1px solid black;
+    width: 100%;
+    height: auto;
+}
+p.footer
+{
+    position: relative;
+    bottom: 10%;
+}
+</style>
+<body>
+    <div class="div big" id="girl-output"></div>
+    <div class="div big" id="boy-output"></div>
+    <script type="module">
+        import {Eve,Adam} from "../people/people.ts";
+        
+        export function outputEve() {
+            document.getElementById("girl-output").innerHTML = Eve.describeface();
+        }
+
+        export function outputAdam() {
+            document.getElementById("boy-output").innerHTML = Adam.describeface();
+        }
+
+        outputEve();
+        outputAdam();
+    </script>
+</body>
+
+</html>
